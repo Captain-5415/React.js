@@ -28,7 +28,6 @@ export default function App() {
 
       <Greeting name ={name2}/>
       <Eg/>
-      
     </div>
   );
 }
