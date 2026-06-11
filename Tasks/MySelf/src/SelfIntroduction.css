@@ -1,0 +1,30 @@
+.self-introduction h2 {
+    color: #f8fafc;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.section {
+    background-color: #1e293b;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+}
+
+.section h3 {
+    color: #60a5fa;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.section p,
+.section li {
+    color: #f1f5f9;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.section ul,
+.section ol {
+    padding-left: 25px;
+}
