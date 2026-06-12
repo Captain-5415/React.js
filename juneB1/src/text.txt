@@ -1,5 +1,37 @@
 05/06/2026
 
+## react intro
+
+    What is React?
+
+    1) React is a JavaScript library (not a framework) developed by Facebook (Meta) for building user interfaces (UIs), especially Single Page Applications (SPAs).
+
+    2) It helps developers build reusable UI components that update efficiently when data changes.
+
+    Instead of reloading a whole webpage when something changes, React updates only the parts of the UI that need to change.
+
+    -------
+    Why do we need React?
+
+	It makes UI development faster, cleaner, and more efficient.
+
+	Provides a better user experience with smooth updates without page reloads.
+
+
+    ## must need to install node.js
+ 
+## procedure to initiate project
+
+    step 1 : npm create vite@latest [project_name]
+    step 2 : select react
+    step 3 : select javascript+ react compailer
+    step 4 : npm install                // install node module packages
+    step 5 : npm run dev 
+
+    if you want to re-run your project mean 
+        npm run dev
+
+        
 
 
 08/06/2026
@@ -18,3 +50,44 @@
     module Styleing --- We need to declare the file name as eg:[fileName.module.css]
     inline Styleing --- we need to call a style attribute with {{padding : "20px"}}
     object Styleing --- we need to create an object and declare the styling properties in keys : values Pairs
+
+
+11/06/2026
+
+## conditional rendering
+
+    Conditional rendering means showing or hiding parts of UI based on some condition.
+
+            ternary operator    {condition?true:false}
+            Logical operator       &&  ||  !
+
+## list Rendering :
+
+    Rendering multiple items dynamically  using map()
+
+    a=[1,2,3,4]
+
+    a.map((name)=>(
+        name*2
+    ))
+
+    [2,4,6,8]
+
+
+## usestate()
+
+     usestate is a react hook that allows you to add state (data that can change over time)
+     your a functional component.
+
+     Normally in js  functions, variables disappear after the function runs, but with usestate,
+     reat remembers values b/w re-renders.
+
+        syntax:
+
+            const[state,setState]=usestate(initiateValue)
+
+            const[count,setCount]=usestate(222)
+
+            state-the current value of the state variable.
+            setState-- a function that update the  state.
+            initiateValue--- the starting value of the state.
