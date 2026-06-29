@@ -1,0 +1,172 @@
+.details {
+    min-height: 100vh;
+    background: #0d1117;
+    color: #fff;
+    padding: 90px 8%;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.details-image img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .4);
+    transition: .4s;
+}
+
+.details-image img:hover {
+    transform: scale(1.03);
+}
+
+.details-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.details-content h2 {
+    color: #ff5a1f;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.details-content p {
+    color: #c9d1d9;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.specifications {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.specifications div {
+    background: #161b22;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 12px;
+    padding: 18px;
+    transition: .3s;
+}
+
+.specifications div:hover {
+    border-color: #ff5a1f;
+    transform: translateY(-4px);
+}
+
+.specifications strong {
+    display: block;
+    color: #ff5a1f;
+    margin-bottom: 8px;
+}
+
+.specifications span {
+    color: #d1d5db;
+}
+
+.details-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.wishlist-btn,
+.book-btn,
+.contact-btn {
+    flex: 1;
+    min-width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #ff5a1f;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.wishlist-btn:hover,
+.book-btn:hover,
+.contact-btn:hover {
+    background: #ff723d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 90, 31, 0.3);
+}
+
+
+
+@media (max-width: 992px) {
+
+    .details {
+        grid-template-columns: 1fr;
+        padding: 80px 5%;
+    }
+
+    .details-image {
+        text-align: center;
+    }
+
+    .details-image img {
+        max-width: 700px;
+    }
+
+    .details-content h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .details-content h1 {
+        font-size: 2rem;
+    }
+
+    .details-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .specifications {
+        grid-template-columns: 1fr;
+    }
+
+    .details-buttons {
+        flex-direction: column;
+    }
+
+    .wishlist-btn,
+    .book-btn,
+    .contact-btn {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .details {
+        padding: 70px 5%;
+    }
+
+    .details-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .details-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .details-content p {
+        font-size: 15px;
+    }
+
+}

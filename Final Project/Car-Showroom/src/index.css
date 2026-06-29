@@ -1,0 +1,210 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: #0d1117;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font-family: inherit;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    section {
+        padding: 80px 8%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    h3 {
+        color: #ffffff;
+    }
+
+    p {
+        color: #c9d1d9;
+        line-height: 1.8;
+    }
+
+    .card {
+        background: #161b22;
+        border: 1px solid rgba(255,255,255,.08);
+        border-radius: 16px;
+        transition: .3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(255,90,31,.20);
+    }
+
+    .primary-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        background: #ff5a1f;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: .3s;
+    }
+
+    .primary-btn:hover {
+        background: #ff723d;
+        transform: translateY(-3px);
+    }
+
+    .secondary-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 30px;
+        border: 2px solid #ff5a1f;
+        color: #ff5a1f;
+        border-radius: 30px;
+        background: transparent;
+        font-weight: 600;
+        transition: .3s;
+    }
+
+    .secondary-btn:hover {
+        background: #ff5a1f;
+        color: #fff;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 15px 18px;
+        background: #161b22;
+        color: #fff;
+        border: 1px solid rgba(255,255,255,.08);
+        border-radius: 10px;
+        outline: none;
+        transition: .3s;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #8b949e;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #ff5a1f;
+        box-shadow: 0 0 10px rgba(255,90,31,.25);
+    }
+
+    select option {
+        background: #161b22;
+        color: #ffffff;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #161b22;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    th {
+        background: #ff5a1f;
+        color: white;
+        padding: 16px;
+    }
+
+    td {
+        padding: 16px;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+        color: #d1d5db;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #0d1117;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #ff5a1f;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ff723d;
+    }
+
+    ::selection {
+        background: #ff5a1f;
+        color: #ffffff;
+    }
+
+    @media (max-width: 992px) {
+        section {
+            padding: 70px 5%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        section {
+            padding: 60px 5%;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+    }

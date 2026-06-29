@@ -1,0 +1,85 @@
+.car-card {
+    background: #161b22;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: .35s;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(255,90,31,.2);
+}
+
+.car-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.car-info h2 {
+    margin-bottom: 18px;
+    color: #fff;
+}
+
+.car-info p {
+    color: #c9d1d9;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.card-buttons {
+    margin-top: auto;
+    display: flex;
+    gap: 15px;
+    padding-top: 25px;
+}
+
+.wishlist-btn,
+.details-btn {
+    flex: 1;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.wishlist-btn {
+    background: #242b35;
+    color: #fff;
+}
+
+.wishlist-btn:hover {
+    background: #ff1744;
+}
+
+.details-btn {
+    background: #ff5a1f;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-btn:hover {
+    background: #ff723d;
+}
+
+@media (max-width:768px) {
+    .card-buttons {
+        flex-direction: column;
+    }
+}

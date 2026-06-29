@@ -1,0 +1,132 @@
+.brands-page {
+    min-height: 100vh;
+    background: #0d1117;
+    padding: 90px 8%;
+}
+
+.brands-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.brands-header h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.brands-header p {
+    max-width: 700px;
+    margin: auto;
+    color: #b8c0cc;
+    line-height: 1.8;
+}
+
+.brands-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.brand-cards {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: #161b22;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-cards:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(240, 220, 220, 0.15);
+}
+
+.brand-image {
+    width: 220px;
+    height: 160px;
+    background: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.brand-image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.brand-content {
+    flex: 1;
+}
+
+.brand-content h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.brand-content p {
+    color: #c9d1d9;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.brand-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff5a1f;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.brand-btn:hover {
+    background: #ff723d;
+}
+
+@media (max-width: 900px) {
+
+    .brands-page {
+        padding: 80px 5%;
+    }
+
+    .brand-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-image {
+        width: 100%;
+        max-width: 280px;
+        height: 180px;
+    }
+
+    .brand-content h2 {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .brands-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .brand-image {
+        height: 150px;
+    }
+
+    .brand-content h2 {
+        font-size: 1.5rem;
+    }
+
+}

@@ -1,0 +1,106 @@
+.compare-page {
+    min-height: 100vh;
+    background: #0d1117;
+    color: #fff;
+    padding: 90px 8%;
+}
+
+.compare-page h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+}
+
+.compare-selectors {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.compare-selectors select {
+    width: 300px;
+    padding: 14px;
+    background: #1b222c;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.compare-selectors select:focus {
+    border-color: #ff5a1f;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #161b22;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.compare-table th {
+    background: #ff5a1f;
+    color: white;
+    padding: 16px;
+    font-size: 17px;
+}
+
+.compare-table td {
+    padding: 16px;
+    border-bottom: 1px solid #2b3139;
+    text-align: center;
+    color: #ddd;
+}
+
+.compare-table td:first-child {
+    font-weight: 600;
+    color: white;
+    background: #1d242d;
+}
+
+.compare-table tr:hover {
+    background: #202833;
+}
+
+.compare-table img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+    .compare-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .compare-page {
+        padding: 80px 5%;
+    }
+
+    .compare-page h1 {
+        font-size: 2.2rem;
+    }
+
+    .compare-selectors {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .compare-selectors select {
+        width: 100%;
+    }
+
+    .compare-table img {
+        width: 160px;
+        height: 100px;
+    }
+}

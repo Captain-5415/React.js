@@ -1,0 +1,91 @@
+.wishlist-page {
+    min-height: 100vh;
+    background: #0d1117;
+    padding: 90px 8%;
+    color: #fff;
+}
+
+.wishlist-page h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
+    justify-content: center;
+    gap: 35px;
+}
+
+.empty {
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    background: #161b22;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 60px 30px;
+}
+
+.empty h2 {
+    font-size: 2rem;
+    color: #ff5a1f;
+    margin-bottom: 15px;
+}
+
+.empty p {
+    color: #c9d1d9;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 992px) {
+    .wishlist-page {
+        padding: 80px 5%;
+    }
+
+    .wishlist-page h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wishlist-page h1 {
+        font-size: 2rem;
+    }
+
+    .cars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .empty {
+        padding: 40px 20px;
+    }
+
+    .empty h2 {
+        font-size: 1.6rem;
+    }
+
+    .empty p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wishlist-page {
+        padding: 70px 5%;
+    }
+
+    .wishlist-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .empty h2 {
+        font-size: 1.4rem;
+    }
+
+    .empty p {
+        font-size: 0.95rem;
+    }
+}
